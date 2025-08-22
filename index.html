@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List using Local Storage</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>To-Do List</h1>
+  </header>
+
+  <main class="container">
+    <!-- Add Item Section -->
+    <div class="add-item">
+      <input type="text" id="taskName" placeholder="Item Name"/>
+      <input type="date" id="taskDate"/>
+      <select id="taskPriority">
+        <option value="">Priority</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button id="addTaskBtn">Add Item</button>
+    </div>
+
+    <!-- Sections -->
+    <section class="tasks-section">
+      <h2>Today's TodoList</h2>
+      <ul id="todayTasks"></ul>
+    </section>
+
+    <section class="tasks-section">
+      <h2>Future TodoList</h2>
+      <ul id="futureTasks"></ul>
+    </section>
+
+    <section class="tasks-section">
+      <h2>Completed TodoList</h2>
+      <ul id="completedTasks"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

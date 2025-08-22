@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #2b2b2b;
+  color: #000;
+}
+
+header {
+  background: #2b2b2b;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.add-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-item input, .add-item select, .add-item button {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.add-item button {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+.add-item button:hover {
+  background: #444;
+}
+
+.tasks-section h2 {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+li .task-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+#todayTasks li,
+#futureTasks li {
+  background: black;
+  color: white;
+}
+
+#completedTasks li {
+  background: white;
+  border: 1px solid #aaa;
+  color: black;
+}
+
+.task-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.task-actions .complete-btn {
+  color: white;
+}
+.task-actions .delete-btn {
+  color: white;
+}
+
+#completedTasks .complete-btn {
+  color: black;
+}
+#completedTasks .delete-btn {
+  color: black;
+}
